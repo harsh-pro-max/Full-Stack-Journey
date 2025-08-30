@@ -1,0 +1,90 @@
+/* h1{
+    background-color: blueviolet;
+    text-indent: 1px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    border:5px solid orange;
+
+}
+p{
+    border-style: solid;
+    border-radius: 10px;
+    border-color:blue;
+    border-width:5px;
+    background-color: yellow;
+}
+a{
+    text-decoration: none;
+    border-top-style:dotted;
+    border-width: 5px;
+} */
+
+/* div+ p{
+    background-color: yellow;
+}
+input:focus{
+    background-color: lightblue;
+    border:3px solid gold;
+}
+a:hover{
+    color:orangered;
+    text-decoration: dotted;
+} */
+/* h1 ~div{
+    width:200px;
+    height: 500px;
+}
+#d1{
+    background-color: yellow;
+    
+}
+#d2{
+    background-color: brown;
+    position:relative;
+    top:20px;
+    left:30px;
+}
+    #d21{
+        width:50px;
+        height:50px;
+        background-color: aqua;
+        top:10px;
+        left:10px;
+        position: absolute;
+    }
+    #d22{
+        position: absolute;
+        width:50px;
+        height: 50px;
+        background-color: burlywood;
+    }
+#d3{
+    background-color: blue;
+
+}
+#d4{
+    background-color: chartreuse;
+} */
+#Input{
+    width:100px;
+    transition: width 0.4s ease-in-out ,background-color 0.5s ease;
+}
+#Input:focus{
+    width:200px;
+    background-color: aqua;
+}
+#d6{
+    width:200px;
+    height:200px;
+    background-color: chocolate;
+    transition:transform 1s ease-out;
+}
+#d6 h1{
+    color:white;
+    text-align: center;
+    position:relative;
+    top:95px;
+}
+h1:hover{
+    transform: rotate(180deg);
+}

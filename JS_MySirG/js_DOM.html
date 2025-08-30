@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <!-- use of Document Object Methords -->
+     <h1 id="heading">Welcome</h1>
+     <input type="text" id="username">
+     <button id="clickmebutton" onclick="f1()">Click Me</button>
+     <h1 class="group1">Another heading</h1>
+     <p class="group1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, maxime? Repudiandae quaerat sint sunt laudantium sed optio assumenda? Error, aliquam!  </p>
+
+    <script>
+        function f1(){
+            var i1 = document.getElementById("username");
+            var h = document.getElementsByTagName("h1");
+            var g = document.getElementsByClassName("group1");
+            h[0].innerHTML="Welcome Student";
+            h[0].style.color="red";
+            h[0].style.backgroundColor="yellow";
+            h[0].style.display="inline";
+        }
+    </script>
+
+</body>
+</html>

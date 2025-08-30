@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TypeFasst</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="file4.css" />
+</head>
+<body>
+  <div class="app-container">
+    <!-- App Heading -->
+    <header class="top-bar">
+  <h1 class="typing-heading">TypeFasst</h1>
+  <div class="user-profile">
+    <span class="user-name">Harshpro</span>
+    <div class="user-stats">
+      <p>Avg Accuracy: 97%</p>
+      <p>Avg WPM: 42</p>
+    </div>
+  </div>
+</header>
+
+    <!-- Typing Panel -->
+    <div class="typing-panel">
+      
+      <!-- Display Text Box -->
+      <div class="text-display">
+        <p id="text-to-type">
+          The quick brown fox jumps over the lazy dog.
+        </p>
+      </div>
+
+      <!-- Typing Textarea -->
+      <textarea id="input-box" placeholder="Start typing here..."></textarea>
+
+      <!-- Stats Panel -->
+      <div class="stats-panel">
+        <div class="stat-item">
+          <label>Time:</label>
+          <span id="time">00:00</span>
+        </div>
+        <div class="stat-item">
+          <label>Accuracy:</label>
+          <span id="accuracy">100%</span>
+        </div>
+        <div class="stat-item">
+          <label>WPM:</label>
+          <span id="wpm">0</span>
+        </div>
+
+        <!-- Start Button -->
+        <button id="start-btn">Start Test</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

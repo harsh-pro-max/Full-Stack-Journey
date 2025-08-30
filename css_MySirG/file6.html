@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="file6.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Typing Speed Test</h1>
+            <p>Test your typing speed and accuracy</p>
+        </header>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-label">Time</span>
+                <span class="stat-value" id="time">60s</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">WPM</span>
+                <span class="stat-value" id="wpm">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Accuracy</span>
+                <span class="stat-value" id="accuracy">100%</span>
+            </div>
+        </div>
+        
+        <div class="text-container">
+            <div id="text-display" class="text-display">
+                Click "Start Test" to begin typing
+            </div>
+        </div>
+        
+        <div class="input-container">
+            <textarea id="text-input" class="text-input" placeholder="Start typing here..." disabled></textarea>
+        </div>
+        
+        <div class="controls">
+            <button id="start-btn" class="btn primary">Start Test</button>
+            <button id="reset-btn" class="btn secondary">Reset</button>
+            <select id="time-select" class="time-select">
+                <option value="30">30 seconds</option>
+                <option value="60" selected>60 seconds</option>
+                <option value="120">2 minutes</option>
+            </select>
+        </div>
+        
+        <div class="results" id="results" style="display: none;">
+            <h2>Test Results</h2>
+            <div class="result-grid">
+                <div class="result-item">
+                    <span class="result-label">Words Per Minute</span>
+                    <span class="result-value" id="final-wpm">0</span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">Accuracy</span>
+                    <span class="result-value" id="final-accuracy">100%</span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">Characters Per Minute</span>
+                    <span class="result-value" id="final-cpm">0</span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">Total Characters</span>
+                    <span class="result-value" id="total-chars">0</span>
+                </div>
+            </div>
+            <button id="save-result" class="btn primary">Save Result</button>
+        </div>
+        
+        <div class="leaderboard" id="leaderboard">
+            <h2>Leaderboard</h2>
+            <div id="leaderboard-list" class="leaderboard-list">
+                <p>No results yet. Complete a test to see your scores!</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="file6.js"></script>
+</body>
+</html>

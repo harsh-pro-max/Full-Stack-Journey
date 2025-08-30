@@ -1,0 +1,256 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: darkblue;
+    height: 80px;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+nav li{
+    margin: 20px;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+}
+nav a:hover{
+    color: lightblue;
+}
+nav h2{
+    color: darkorange;
+    display: flex;
+    align-items: center;
+}
+.hero{
+    height: 400px;
+    background-color: skyblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hero h1{
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+
+}
+.hero p{
+    color: darksalmon;
+}
+.hero a{
+    padding: 8px;
+    background-color: tomato;
+    border-radius: 15px;
+    border: 2px solid greenyellow;
+    text-decoration: none;    
+}
+.hero a:hover{
+    color: skyblue;
+    background-color: cadetblue;
+}
+.about{
+    background-color: #fff0f5;
+    padding: 40px 20px;
+    text-align: center;
+}
+.about h2{
+    color: darkblue;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.about p{
+    color: #555;
+    font-size: 18px;
+    max-width: 600px;
+    margin: auto;
+}
+.about img{
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+.blog-posts{
+    height: 300px; 
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.blog-posts .summery{
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    background-color: #fff0f5;
+    margin-top: 0px;
+
+}
+.blog-posts div:hover{
+    background-color: skyblue;
+}
+.blog-posts div h3{
+    font-size: 35px;
+    color: chocolate;
+}
+.blog-posts div p{
+    color:crimson;
+    font-style: italic;
+}
+.blog-posts div a{
+    padding: 5px;
+    text-decoration: none;
+    border: 2px solid lightgreen;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    color: crimson;
+}
+.blog-posts div a:hover{
+    background-color: aquamarine;
+}
+.testimonials-section{
+    padding: 20px;
+    background-color: coral;
+    text-align: center;
+}
+.testimonials-container{
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+}
+.testimonial-card{
+    width: 250px;
+    padding: 20px;
+    background-color: #fff0f5;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+}
+.testimonial-card h4{
+    color: chocolate;
+}
+.contact{
+    background-color:cadetblue;
+    padding: 40px 0;
+    text-align: center;
+}
+.contact form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact input,.contact textarea{
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.contact label{
+    text-align: left;
+    font-weight: bold;
+}
+.contact button{
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+.contact button:hover{
+    background-color: #555;
+}
+.newsletter-section{
+    background-color: darksalmon
+    ;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    /* border-radius: 5px; */
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+}
+.newsletter h2{
+    font-size: 35px;
+    background-color: lightgreen;
+    display: inline;
+    padding: 2px;
+    color: palevioletred;
+}
+.newsletter p{
+    font-size: 18px;
+    line-height: 10px;
+    color: #333;
+}
+.subscribe {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.subscribe input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    outline: none;
+}
+
+.subscribe button {
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.subscribe button:hover {
+    background-color: #0077cc;
+    transform: scale(1.05);
+}
+.features-section{
+    background-color: lightcyan;
+    padding: 10px;
+    text-align: center;
+}
+.features-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.feature-card{
+    width: 250px;
+    padding: 10px;
+    margin: 20px;
+    background-color: cornflowerblue;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+    text-align: center;
+    transition: background-color,border-radius 1.5s ease-in-out;
+}
+.feature-card:hover{
+    background-color: blueviolet;
+    border-radius: 25px;
+}
+.feature-card h3{
+    font-size: 25px;
+    color: chocolate;
+}

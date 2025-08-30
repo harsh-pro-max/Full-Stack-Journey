@@ -1,0 +1,82 @@
+h1{
+    border: 2px dashed gold;
+    padding: 3px;
+    background-color: antiquewhite;
+    margin: 5px;
+    margin: 10px;
+    border-left-color: blue;
+    border-left-style: solid;
+    border-radius: 15px;
+    width: 40%;
+}
+.style{
+    height: 200px;
+    width: 500px;
+    border-radius: 25px;
+    background-color: palevioletred;
+    border-width: 5px;
+    border-style: solid;
+    border-color: chartreuse;
+    padding: 10px;
+    border-top-left-radius:51px ;
+}
+#parant{
+    height: 200px;
+    width: 70px;
+    background-color:bisque;
+    border: 2px solid black;
+}
+#parant div{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 2px solid black;
+
+}
+.child1{
+    background-color: red;
+}
+.child2{
+    background-color: yellow;
+}
+.child3{
+    background-color: green;
+}
+.inline2{
+    height: 200px;
+    width: 200px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    margin: 5px;
+    display: inline-block;
+}
+.outer2{
+    height: 400px;
+    width: 400px;
+    background-color: pink;
+    margin: 50px;
+    border: 2px solid black;
+    font-size: 10px;
+}
+.inner{
+    height: 100px;
+    width: 100px;
+    background-color: greenyellow;
+    margin-left: 10%;
+    font-size: 2em; /* doble size of paranet class */
+    padding: 1em;
+}
+button{
+    font-size:50px;
+    border-radius: 15px;
+    border:5px solid green;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+section{
+    font-size: 15px;
+}
+section .div1,.div2,.div3{
+    font-size: 1.5em;
+}

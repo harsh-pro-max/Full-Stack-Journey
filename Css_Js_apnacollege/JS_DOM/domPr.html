@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DOM Practice  Harsh</title>
+  <!-- <style>
+    body { font-family: system-ui, Arial, sans-serif; margin: 24px; }
+    section { margin: 20px 0; padding: 12px; border: 1px dashed #ddd; }
+    h2 { margin-top: 0; }
+    .card { padding: 12px; border: 1px solid #ccc; background: #fafafa; }
+    .rounded { border-radius: 12px; }
+  </style> -->
+</head>
+<body>
+  <h1 id="page-title">DOM Practice Playground</h1>
+
+  <!-- Basic (Warm-up) -->
+  <section id="basic">
+    <h2>Basic (Warm-up)</h2>
+    <!-- 1) ul+li: JS se banao (blank target provided) -->
+    <div id="basic-ul-target"></div>
+
+    <!-- 2) Existing p that must be updated via JS -->
+    <p id="existing-paragraph">I am an existing paragraph (update me via JS).</p>
+
+    <!-- 3) hr: JS se add karo (no existing hr provided) -->
+  </section>
+
+  <!-- Selectors & Styling -->
+  <section id="selectors-styling">
+    <h2>Selectors & Styling</h2>
+    <!-- Some paragraphs to style gray via querySelectorAll -->
+    <p>Para 1 for styling</p>
+    <p>Para 2 for styling</p>
+    <p>Para 3 for styling</p>
+
+    <!-- Buttons to style yellow with 8px radius -->
+    <div id="buttons-bank">
+      <button>Button A</button>
+      <button>Button B</button>
+      <button>Button C</button>
+    </div>
+
+    <!-- Element with id="title" to transform -->
+    <div id="title">make me 32px and UPPERCASE via JS</div>
+  </section>
+
+  <!-- Events (Interactive) -->
+  <section id="events">
+    <h2>Events (Interactive)</h2>
+
+    <!-- 1) Button to randomize body background -->
+    <button id="random-bg-btn">Randomize Background</button>
+
+    <!-- 2) Input + button: add value to a UL as new li -->
+    <div id="adder-area">
+      <input id="item-input" type="text" placeholder="Type item..." />
+      <button id="add-item-btn">Add Item</button>
+      <ul id="items-ul"></ul>
+    </div>
+
+    <!-- 3) h1 with hover color change -->
+    <h1 id="hover-title">Hover over me (blue on mouseenter, black on mouseleave)</h1>
+  </section>
+
+  <!-- Attributes & Classes -->
+  <section id="attrs-classes">
+    <h2>Attributes & Classes</h2>
+
+    <!-- 1) Image: JS se banao (target container) -->
+    <div id="image-target"></div>
+
+    <!-- 2) Div to add classes 'card' and 'rounded' then remove 'rounded' -->
+    <div id="class-demo">Class demo box</div>
+
+    <!-- 3) Button with data-action="delete" and click handler -->
+    <button id="delete-btn">Delete (check console)</button>
+  </section>
+
+  <!-- DOM Traversal -->
+  <section id="traversal">
+    <h2>DOM Traversal</h2>
+
+    <!-- 1) List with 5 items (existing), set 3rd li lightpink via JS -->
+    <ul id="five-list">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+    </ul>
+
+    <!-- 2) Container to log firstChild and lastChild -->
+    <div id="container-to-log">
+      <span>First child span</span>
+      <em>Middle em</em>
+      <strong>Last child strong</strong>
+    </div>
+
+    <!-- 3) Nested structure (div>ul>li*3) -->
+    <div id="nested">
+      <ul>
+        <li>First</li>
+        <li id="second-li">Second</li>
+        <li>Third</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Create/Remove/Replace -->
+  <section id="crud">
+    <h2>Create / Remove / Replace</h2>
+
+    <!-- 1) Paragraph: JS se banao aur 2s baad remove() -->
+    <div id="remove-target"></div>
+
+    <!-- 2) Existing h2 to be replaced -->
+    <h2 id="replace-me">I will be replaced</h2>
+
+    <!-- 3) Div to prepend 'Start' p and append 'End' p -->
+    <div id="prepend-append-box" class="card">Prepend/Append Box</div>
+  </section>
+
+  <!-- Forms & Validation -->
+  <section id="forms">
+    <h2>Forms & Validation</h2>
+
+    <!-- Form: JS se banao (blank target) -->
+    <div id="login-form-target"></div>
+
+    <!-- Password char count area (JS will fill/update) -->
+    <div id="password-count-area"></div>
+
+    <!-- I agree checkbox + submit button handling -->
+    <div id="agree-area"></div>
+  </section>
+
+  <!-- Script area: write or link your JS here -->
+  <script src="dompr.js"></script>
+</body>
+</html>

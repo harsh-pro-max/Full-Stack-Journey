@@ -1,0 +1,63 @@
+a{
+    background-color: #222;
+    color: #fff;
+    padding: 5px;
+    width: 100%;
+    text-decoration: none;
+    align-items: center;
+    border: 2px solid red;
+}
+a:hover{
+    background-color: crimson;
+    color: blue;
+    border:3px solid greenyellow;
+}
+.image-container {
+  display: flex;
+  justify-content: flex-end; /* ये right align करता है */
+}
+
+.profile-pic {
+  height: 250px;
+  width: 250px;
+  background-image: url("harsh.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+h1{
+  text-align: right;
+  color: chocolate;
+}
+.title{
+  text-align: right;
+  color: blue;
+  font-size: 20px;
+}
+#home{
+  background-color: burlywood;
+}
+#about{
+  background-color: blueviolet;
+}
+h2{
+  color:chocolate;
+  font:italic;
+}
+p{
+  color: cornflowerblue;
+}
+#education{
+  background-color: aquamarine;
+  color:brown;
+}
+#projects{
+  background-color: aqua;
+}
+article{
+  color:deeppink;
+}
+#contact{
+  background-color: aliceblue;
+  color: cornflowerblue;
+}

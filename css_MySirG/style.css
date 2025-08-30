@@ -1,0 +1,24 @@
+body{
+    background-image: url('amir.jpeg');
+    background-repeat: repeat-x;
+}
+h1{
+    color:rgb(42, 42, 227);
+    text-transform: capitalize;
+    text-decoration: overline;
+    background-color:orange;
+    text-align: center;
+}
+p{
+    color:#00aa00;
+    text-align: justify;
+    text-indent: 50px;
+    letter-spacing: 2px;
+    /* font-size: 50px; */
+    font-style: italic;
+}
+a{
+    text-decoration: none;
+    color:orange;
+    font-weight: bold;
+}

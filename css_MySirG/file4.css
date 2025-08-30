@@ -1,0 +1,165 @@
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page background and font */
+body {
+  background-color: lavender;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* App Container */
+.app-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 800px;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* 🔷 Top Bar Styling */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px; /* पहले 20px था, अब कम किया */
+  background-color: #f3f0ff;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 10px;
+}
+
+/* 🔷 App Title */
+.top-bar .typing-heading {
+  font-size: 28px;
+  font-weight: bold;
+  color: navy;
+  margin: 0;
+}
+
+/* 🔷 User Profile Info */
+.user-profile {
+  text-align: right;
+  font-size: 14px;
+}
+
+.user-name {
+  font-weight: bold;
+  font-size: 16px;
+  color: #222;
+}
+
+.user-stats p {
+  margin: 2px 0;
+  color: #444;
+  font-size: 13px;
+}
+
+
+/* Typing Panel */
+.typing-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin-top: 20px;
+}
+
+/* Displayed Text Box */
+.text-display {
+  width: 100%;
+  height: 150px;
+  font-size: 18px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid gray;
+  background-color: #f7f7f7;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+/* Text inside Display */
+.text-display p {
+  font-family: 'JetBrains Mono','Fira Code',monospace;
+  font-size: 24px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  /* color: #333;
+  font-weight: bold; */
+
+}
+
+/* Typing Textarea */
+#input-box {
+  font-family: 'JetBrains Mono','Fira Code',monospace;
+  width: 100%;
+  height: 150px;
+  font-size: 24px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid gray;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+/* Stats Panel */
+.stats-panel {
+  background-color: #f3f0ff;
+  border-radius: 12px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Individual Stat */
+.stat-item {
+  text-align: center;
+  flex: 1;
+}
+
+.stat-item label {
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.stat-item span {
+  font-size: 18px;
+  color: navy;
+}
+
+/* Start Button */
+#start-btn {
+  background-color: navy;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#start-btn:hover {
+  background-color: darkblue;
+}

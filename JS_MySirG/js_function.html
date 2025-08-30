@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function f1(x,y){
+            var z=x+y;
+            document.write("x is:"+x+"y is:"+y+"sum of x+y:"+z+"<br>");
+            return z;
+        }
+        var a=f1(89,12);
+        x=f1;
+        x=x(5,9);
+        document.write("a is:"+a+"<br>");
+        document.write("a is:"+x);
+
+        // methords as object
+        var p1={
+            firstName:"harsh",
+            lastName:"samir",
+            age:38,
+            // editAge:function(a){
+            //     age=a;
+            // }
+            // use of this keyword
+            editAge:function(age){
+                this.age=age;
+            }
+        }
+    </script>
+</body>
+</html>

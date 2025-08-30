@@ -1,0 +1,29 @@
+.alpha{
+    height: 200px;
+    width: 200px;
+    /* background-color: rgba(142, 114, 114, 0.1); */
+    background-color: #4dff00a1;
+    transition: border-radius 1.5s;
+}
+.alpha:hover{
+    background-color: blueviolet;
+    border-radius: 50%;
+}
+.opacity{
+    background-color: #ffa511;
+    height: 200px;
+    width: 200px;
+}
+.transition{
+    height: 100px;
+    width: 100px;
+    background-color:cornflowerblue;
+    margin-top:10ps;
+    margin: 0 auto;
+    transition:  margin-top 2s ease-in 0.2s;
+}
+.transition:hover{
+    margin-top: 400px;
+    background-color: palevioletred;
+
+}

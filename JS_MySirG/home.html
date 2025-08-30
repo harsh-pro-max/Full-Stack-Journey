@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x=56;
+        if(x> 85)
+            document.write("marks"+x+"Grade A");
+        else if(x>70)
+        document.write("marks" + x +"Grade B");
+        else if(x>60)
+            document.write("marks"+x+"grade c")
+        else if(x>45){
+            document.write("marks" + "grade d")
+        }
+        else
+            document.write("fail" + x+ "grade e")
+
+// conditional operator
+        var x,y;
+        x=53;
+        y=90;
+        var z;
+        z=x>y?x:y
+        document.write(z)
+    
+
+        // switch case statement
+        x=3;
+        switch(x){
+            case 1:
+                document.write("case 1");
+                break;
+            case 2:
+                document.write("case 2 select");
+                break;
+            case 3:
+                document.write("case 3 select");
+                break;
+            case 4:
+                document.write("case 4 select")
+                break;
+            default:
+                document.write("case not match")
+        }
+
+        // interative control 1.while loop 
+        var i=1;
+        while(i<=5){
+            document.write("<br>i="+i+"mysirg ");
+            i++;
+        }
+
+        // do while loop
+        var i=1; 
+        do{
+            document.write("<br>i="+i+"mysirg");
+            i++;
+        }while(i<=5);
+
+        // for loop
+        i=1;
+        for(i=1;i<=5;i++){
+            document.write("<br>i="+i+"mysirg");
+        }
+    </script>
+    <!-- <script type="module" src="home.js"></script> -->
+</body>
+</html>

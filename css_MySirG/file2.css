@@ -1,0 +1,144 @@
+.profile-card{
+    height: 300px;
+    padding:20px;
+    background-color: lightblue;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+.profile-card h2{
+    color: darkblue;
+    margin-bottom: 10px;
+}
+.profile-card p{
+    color: #333;
+    font-size: 16px;
+}
+.card{
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    background-color: cornflowerblue;
+    margin-bottom: 20px;
+}
+.profile-pic img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid lightgreen;
+}
+.profile-pic h2{
+    font: bold;
+    font-size: 20px;
+}
+.profile-pic p{
+    font-size: 14px;
+    color: gray;
+}
+a{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color:dodgerblue;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+
+}
+a:hover{
+    background-color: darkblue;
+}
+.services{
+    display: flex;
+    justify-content: space-around;
+    padding:20px;
+    background-color: blueviolet;
+    margin-top: 0px;
+}
+.service-card{
+    width: 250px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: ease-in-out;
+}
+.service-card:hover{
+    background-color: aquamarine;
+
+}
+.service-card h3{
+    font: 100;
+    color: darkorange;
+}
+.service-card p{
+    color:lightcoral;
+}
+.testimonials{
+    background-color: #f8f8f8;
+    padding-top: 40px;
+    padding-right: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.testimonial-card{
+    background-color: white;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    transform: scale(1.05);
+}
+.testimonial-card:hover{
+    background-color: aquamarine;
+}
+.testimonial-card p{
+    font-style: italic;
+    color: #333;
+    margin-bottom: 10px;
+}
+.testimonial-card h4{
+    font-weight: bold;
+    color: #555;
+}
+.contact-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: #e6f2ff;
+}
+.contact-info{
+    width:40%;
+    text-align: left;
+
+}
+.contact-info h3{
+    font-weight: bold;
+    font-size: medium;
+}
+.feedback-form{
+    width: 50%;
+
+}
+.feedback-form #Name,#Email,#Message  {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+
+}
+.feedback-form textarea{
+    width:100%;
+    background-color: antiquewhite;    
+}
+.feedback-form #submit,#reset{
+    background-color: dodgerblue;
+    color: white;
+}
+.feedback-form #submit:hover,#reset:hover{
+    background-color: darkblue;
+}

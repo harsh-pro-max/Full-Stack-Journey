@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All-in-One Practice Form</title>
+</head>
+<body>
+    <h1>All-in-One HTML5 Form (Without CSS)</h1>
+    <form action="#" method="post">
+
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br><br>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" maxlength="10" placeholder="10-digit mobile" required><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob"><br><br>
+
+            Gender:
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+        </fieldset>
+
+        <!-- Education & Skills -->
+        <fieldset>
+            <legend>Education & Skills</legend>
+
+            <label for="qualification">Highest Qualification:</label>
+            <select id="qualification" name="qualification">
+                <option value="matric">Matriculation</option>
+                <option value="inter">12th</option>
+                <option value="grad">Graduation</option>
+                <option value="postgrad">Post-Graduation</option>
+            </select><br><br>
+
+            Skills:<br>
+            <label><input type="checkbox" name="skills" value="html">HTML</label>
+            <label><input type="checkbox" name="skills" value="css">CSS</label>
+            <label><input type="checkbox" name="skills" value="js">JavaScript</label>
+            <label><input type="checkbox" name="skills" value="python">Python</label>
+            <label><input type="checkbox" name="skills" value="django">Django</label><br><br>
+
+            <label for="experience">Experience (in years):</label>
+            <input type="number" id="experience" name="experience" min="0"><br><br>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume"><br><br>
+        </fieldset>
+
+        <!-- Feedback -->
+        <fieldset>
+            <legend>Feedback</legend>
+
+            <label for="rating">Rating (1 to 5):</label>
+            <select id="rating" name="rating">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select><br><br>
+
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" placeholder="Write your thoughts..." rows="4" cols="50"></textarea><br><br>
+        </fieldset>
+
+        <!-- Declaration -->
+        <label>
+            <input type="checkbox" name="agree" required>
+            I confirm all the information provided is true.
+        </label><br><br>
+
+        <!-- Buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+
+    </form>
+</body>
+</html>

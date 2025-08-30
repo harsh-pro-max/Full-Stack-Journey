@@ -1,0 +1,52 @@
+.card{
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 4px 8px black;
+    align-items: center;
+
+}
+.card:hover{
+    box-shadow: 0 8px 16px;
+}
+.desc{
+    padding: 0 2px 0 2px;
+}
+img{
+    height: 60%;
+    border-radius: 5px 5px 0 0;
+    align-items: center;
+}
+.static{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    text-align: center;
+    border: 3px solid black;
+    margin: 20px;
+    display: inline-block;
+}
+#two{
+    background-color: yellow;
+    position: static;
+    top: 100px;
+    left: 100px;
+}
+.relative{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    text-align: center;
+    border: 3px solid black;
+    margin: 20px;
+    display: inline-block;
+}
+#two{
+    position: relative;
+    background-color: yellow;
+    top: 100px;
+    left: 100px;
+}

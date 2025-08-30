@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sardar Vallabhbhai Patel College Bhabua</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23667eea" width="1200" height="600"/><polygon fill="%23764ba2" points="0,600 1200,400 1200,600"/></svg>');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-top: 80px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-content p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ffd700;
+            color: #333;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.3s;
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section {
+            padding: 4rem 0;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+            position: relative;
+        }
+
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .stat-card h3 {
+            font-size: 2.5rem;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Programs Section */
+        .programs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .program-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .program-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .program-card i {
+            font-size: 3rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        .program-card h3 {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        /* Notices Section */
+        .notices-container {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .notice-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .notice-date {
+            background: #667eea;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            margin-right: 1rem;
+            font-weight: bold;
+        }
+
+        .notice-text {
+            flex: 1;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 3rem 0 1rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #ffd700;
+        }
+
+        .footer-section p, .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            color: #ffd700;
+        }
+
+        .footer-bottom {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #555;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .about-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .programs-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SV Patel College</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#notices">Notices</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Sardar Vallabhbhai Patel College</h1>
+            <p>Empowering minds, shaping futures in the heart of Bhabua, Kaimur</p>
+            <a href="#about" class="cta-button">Explore Our Legacy</a>
+        </div>
+    </section>
+
+    <main>
+        <section id="about" class="section">
+            <h2>About Our College</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Sardar Vallabhbhai Patel College Bhabua Kaimur, with more than six decades of rich history, stands as an epitome of knowledge and freedom in a place famous for beautiful natural surroundings and ancient cultural heritage sites of Maa Mundeshwari and Harsu Brahm[1].</p>
+                    <p>We impart higher education to our students so that they become better human beings and make a positive impact in society[1]. Our team of excellent teachers and learning resources offer a comprehensive perspective to students through innovative pedagogy and value-added education[1].</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3>60+</h3>
+                        <p>Years of Excellence</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>A+</h3>
+                        <p>NAAC Target</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>100%</h3>
+                        <p>Equal Opportunity</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>∞</h3>
+                        <p>Possibilities</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="programs" class="section">
+            <h2>Academic Programs</h2>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Bachelor of Arts (BA)</h3>
+                    <p>Comprehensive undergraduate program in liberal arts with multiple specializations</p>
+                </div>
+                <div class="program-card">
+                    <i class="fas fa-flask"></i>
+                    <h3>Bachelor of Science (BSc)</h3>
+                    <p>Science programs designed to build strong foundation in scientific principles</p>
+                </div>
+                <div class="program-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Bachelor of Computer Applications (BCA)</h3>
+                    <p>Professional computer science program for the digital age</p>
+                </div>
+                <div class="program-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Master of Arts (MA)</h3>
+                    <p>Advanced postgraduate programs for specialized knowledge and research</p>
+                </div>
+                <div class="program-card">
+                    <i class="fas fa-school"></i>
+                    <h3>Intermediate (IA/ISC)</h3>
+                    <p>Higher secondary education with focus on college preparation</p>
+                </div>
+                <div class="program-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Professional Courses</h3>
+                    <p>Career-oriented programs alongside traditional academic courses</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="notices" class="section">
+            <h2>Important Notices</h2>
+            <div class="notices-container">
+                <div class="notice-item">
+                    <div class="notice-date">2022</div>
+                    <div class="notice-text">
+                        <strong>PG Admission Notice</strong> - Important Notice for admission in PG programs[1]
+                    </div>
+                </div>
+                <div class="notice-item">
+                    <div class="notice-date">2022</div>
+                    <div class="notice-text">
+                        <strong>BCA Examination</strong> - Notice regarding Examination Programme & Centre List of BCA SEM-I[1]
+                    </div>
+                </div>
+                <div class="notice-item">
+                    <div class="notice-date">2019</div>
+                    <div class="notice-text">
+                        <strong>E-Material</strong> - Notice regarding e-material study material availability[1]
+                    </div>
+                </div>
+                <div class="notice-item">
+                    <div class="notice-date">2018</div>
+                    <div class="notice-text">
+                        <strong>MA Admission</strong> - Notice Regarding Admission In MA-2018-20[1]
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Information</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Bhabua, Kaimur District</p>
+                <p><i class="fas fa-phone"></i> Contact Number</p>
+                <p><i class="fas fa-envelope"></i> Email Address</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="#about">About Us</a></p>
+                <p><a href="#programs">Programs</a></p>
+                <p><a href="#notices">Notices</a></p>
+                <p><a href="#contact">Contact</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Heritage Sites</h3>
+                <p>Maa Mundeshwari Temple</p>
+                <p>Harsu Brahm</p>
+                <p>Beautiful Natural Surroundings</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Sardar Vallabhbhai Patel College Bhabua. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(102, 126, 234, 0.95)';
+            } else {
+                header.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+            }
+        });
+    </script>
+</body>
+</html>

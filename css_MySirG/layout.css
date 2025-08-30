@@ -1,0 +1,26 @@
+#top-container{
+    height: 100px;
+    background-color: lightblue;
+    margin-bottom: 20px;
+}
+.contant-container{
+    min-height: 800px;
+    background-color: #fff;
+    /* column-count: 2;
+    column-gap: 20px; */
+}
+#left{
+    background-color: lightgray;
+    min-height: 800px;
+    width: 250px;
+    float:left;
+}
+#main{
+    background-color: lightgreen;
+    min-height: 800px;
+    
+}
+.footer{
+    height: 100px;
+    background-color: lightcoral;
+}

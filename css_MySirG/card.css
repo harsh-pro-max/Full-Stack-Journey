@@ -1,0 +1,25 @@
+#card{
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    border: 7px solid greenyellow;
+}
+#img{
+    height: 250px;
+    width:250px;
+    background-image: url('harsh.jpg') ;
+    border-radius: 50%;
+    margin:auto;
+    background-size: cover;
+    
+}
+#heading{
+    height: 40px;
+    background-color: azure;
+    /* border:2px solid darkgoldenrod; */
+}
+h1{
+    background-color: brown;
+    border: 2px solid pink;
+
+}

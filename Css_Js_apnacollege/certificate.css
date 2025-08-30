@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color:rgba(70, 70, 170, 0.8);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(70, 70, 170, 0.6);
+    z-index: 0;
+}
+
+/* Container to center heading + form together */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+/* Heading styles */
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.heading h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.heading p {
+    font-size: 0.95rem;
+}
+
+/* Main form container */
+.main_contant {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    color: #fff;
+}
+
+/* Inputs, selects, textarea */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Checkbox, radio */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+/* Labels */
+label {
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Submit button */
+button {
+    background: #37af65;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #2d8a50;
+}
+
+form {
+    position: relative;
+    z-index: 1;
+}

@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #4a5568;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #718096;
+    font-size: 1.1em;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    background: #f7fafc;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #e2e8f0;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-label {
+    display: block;
+    font-size: 0.9em;
+    color: #718096;
+    margin-bottom: 5px;
+}
+
+.stat-value {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4a5568;
+}
+
+.text-container {
+    margin-bottom: 20px;
+}
+
+.text-display {
+    background: #f9f9f9;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    min-height: 120px;
+    font-family: 'Courier New', monospace;
+}
+
+.text-display .correct {
+    background-color: #c6f6d5;
+    color: #22543d;
+}
+
+.text-display .incorrect {
+    background-color: #fed7d7;
+    color: #822727;
+}
+
+.text-display .current {
+    background-color: #bee3f8;
+    color: #1a365d;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.text-input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-family: 'Courier New', monospace;
+    resize: vertical;
+    min-height: 80px;
+}
+
+.text-input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.controls {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn.primary {
+    background: #667eea;
+    color: white;
+}
+
+.btn.primary:hover {
+    background: #5a67d8;
+    transform: translateY(-2px);
+}
+
+.btn.secondary {
+    background: #e2e8f0;
+    color: #4a5568;
+}
+
+.btn.secondary:hover {
+    background: #cbd5e0;
+    transform: translateY(-2px);
+}
+
+.time-select {
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1em;
+    background: white;
+    cursor: pointer;
+}
+
+.results {
+    background: #f0fff4;
+    border: 2px solid #9ae6b4;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.results h2 {
+    color: #22543d;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.result-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.result-item {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #c6f6d5;
+}
+
+.result-label {
+    display: block;
+    font-size: 0.9em;
+    color: #718096;
+    margin-bottom: 5px;
+}
+
+.result-value {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #22543d;
+}
+
+.leaderboard {
+    background: #f7fafc;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.leaderboard h2 {
+    color: #4a5568;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.leaderboard-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.leaderboard-item {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leaderboard-item .rank {
+    font-weight: bold;
+    color: #667eea;
+    font-size: 1.2em;
+}
+
+.leaderboard-item .stats {
+    display: flex;
+    gap: 20px;
+}
+
+.leaderboard-item .stat {
+    font-size: 0.9em;
+    color: #718096;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .stats {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .result-grid {
+        grid-template-columns: 1fr;
+    }
+}
