@@ -15,5 +15,10 @@
 // console.log(someValue);
 
 // import folders and use files to use 
-const info =require("./fruits");
-console.log(info[0].name);
+// const info =require("./fruits");
+// console.log(info[0].name);
+
+import {sum,PI} from "./math.js";
+
+import { generate } from "random-words";
+console.log(generate());
